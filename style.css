@@ -30,3 +30,8 @@ body {
     height: 100%;
     filter: blur(0.1vmin);
   }
+
+  .flowers {
+    position: relative;
+    transform: scale(0.9);
+  }
