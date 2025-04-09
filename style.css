@@ -133,3 +133,30 @@ body {
           }
         }
       }
+
+      &__leafs {
+        position: relative;
+        animation: blooming-flower 2s backwards;
+    
+        $delay: 0.8;
+        $inc: 0.3;
+    
+        @for $i from 1 through 3 {
+          &--#{$i} {
+            $delay: $delay + $inc;
+            animation-delay: #{$delay}s;
+          }
+        }
+    
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(-50%, -100%);
+          width: 8vmin;
+          height: 8vmin;
+          background-color: #6bf0ff;
+          filter: blur(10vmin);
+        }
+      }
