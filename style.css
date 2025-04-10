@@ -206,3 +206,20 @@ body {
         height: 4vmin;
         border-radius: 50%;
         background-color: #fff;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 60%;
+            border-radius: inherit;
+            background-image: repeating-linear-gradient(
+                300deg,
+                rgba(0, 0, 0, 0.03) 0px,
+                rgba(0, 0, 0, 0.03) 1px,
+                transparent 1px,
+                transparent 12px
+              ),
