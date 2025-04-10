@@ -195,5 +195,14 @@ body {
             background-image: linear-gradient(to top, #39c6d6, #a7ffee);
             z-index: 1;
             opacity: 0.8;
-          }
-        }
+         }
+      }
+
+      &__white-circle {
+        position: absolute;
+        left: -3.5vmin;
+        top: -3vmin;
+        width: 9vmin;
+        height: 4vmin;
+        border-radius: 50%;
+        background-color: #fff;
