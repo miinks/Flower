@@ -524,3 +524,114 @@ body {
                 }
               }
             }
+
+            &--2 {
+              top: -5%;
+              left: -110%;
+              --size: 6vmin;
+              transform: rotate(10deg);
+              animation: growing-grass-ans--2 $speed-leaf 2.4s linear backwards;
+              @keyframes growing-grass-ans--2 {
+                0% {
+                  transform-origin: bottom right;
+                  transform: rotate(10deg) scale(0);
+                }
+              }
+            }
+      
+            &--3 {
+              top: 5%;
+              left: 60%;
+              --size: 8vmin;
+              transform: rotate(-18deg) rotateX(-20deg);
+              animation: growing-grass-ans--3 $speed-leaf 2.2s linear backwards;
+              @keyframes growing-grass-ans--3 {
+                0% {
+                  transform-origin: bottom left;
+                  transform: rotate(-18deg) rotateX(-20deg) scale(0);
+                }
+              }
+            }
+      
+            &--4 {
+              top: 6%;
+              left: -135%;
+              --size: 8vmin;
+              transform: rotate(2deg);
+              animation: growing-grass-ans--4 $speed-leaf 2s linear backwards;
+              @keyframes growing-grass-ans--4 {
+                0% {
+                  transform-origin: bottom right;
+                  transform: rotate(2deg) scale(0);
+                }
+              }
+            }
+      
+            &--5 {
+              top: 20%;
+              left: 60%;
+              --size: 10vmin;
+              transform: rotate(-24deg) rotateX(-20deg);
+              animation: growing-grass-ans--5 $speed-leaf 1.8s linear backwards;
+              @keyframes growing-grass-ans--5 {
+                0% {
+                  transform-origin: bottom left;
+                  transform: rotate(-24deg) rotateX(-20deg) scale(0);
+                }
+              }
+            }
+      
+            &--6 {
+              top: 22%;
+              left: -180%;
+              --size: 10vmin;
+              transform: rotate(10deg);
+              animation: growing-grass-ans--6 $speed-leaf 1.6s linear backwards;
+              @keyframes growing-grass-ans--6 {
+                0% {
+                  transform-origin: bottom right;
+                  transform: rotate(10deg) scale(0);
+                }
+              }
+            }
+      
+            &--7 {
+              top: 39%;
+              left: 70%;
+              --size: 10vmin;
+              transform: rotate(-10deg);
+              animation: growing-grass-ans--7 $speed-leaf 1.4s linear backwards;
+              @keyframes growing-grass-ans--7 {
+                0% {
+                  transform-origin: bottom left;
+                  transform: rotate(-10deg) scale(0);
+                }
+              }
+            }
+      
+            &--8 {
+              top: 40%;
+              left: -215%;
+              --size: 11vmin;
+              transform: rotate(10deg);
+              animation: growing-grass-ans--8 $speed-leaf 1.2s linear backwards;
+              @keyframes growing-grass-ans--8 {
+                0% {
+                  transform-origin: bottom right;
+                  transform: rotate(10deg) scale(0);
+                }
+              }
+            }
+          }
+      
+          &__overlay {
+            position: absolute;
+            top: -10%;
+            right: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            filter: blur(1.5vmin);
+            z-index: 100;
+          }
+        }
