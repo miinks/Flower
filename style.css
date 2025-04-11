@@ -469,4 +469,58 @@ body {
             animation: moving-grass 2s linear infinite;
           }
       
+          &--2 {
+            left: 2vmin;
+            bottom: 10vmin;
+            transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
+            opacity: 0.8;
+            z-index: 0;
+            animation: moving-grass--2 1.5s linear infinite;
+          }
       
+          &--top {
+            width: 7vmin;
+            height: 10vmin;
+            border-top-right-radius: 100%;
+            border-right: var(--line-w) solid var(--c);
+            transform-origin: bottom center;
+            transform: rotate(-2deg);
+          }
+      
+          &--bottom {
+            margin-top: -2px;
+            width: var(--line-w);
+            height: 25vmin;
+            background-image: linear-gradient(to top, transparent, var(--c));
+          }
+      
+          &__leaf {
+            --size: 10vmin;
+            position: absolute;
+            width: calc(var(--size) * 2.1);
+            height: var(--size);
+            border-top-left-radius: var(--size);
+            border-top-right-radius: var(--size);
+            background-image: linear-gradient(
+              to top,
+              transparent,
+              transparent 30%,
+              var(--c)
+            );
+            z-index: 100;
+      
+            $speed-leaf: 2s;
+      
+            &--1 {
+              top: -6%;
+              left: 30%;
+              --size: 6vmin;
+              transform: rotate(-20deg);
+              animation: growing-grass-ans--1 $speed-leaf 2.6s backwards;
+              @keyframes growing-grass-ans--1 {
+                0% {
+                  transform-origin: bottom left;
+                  transform: rotate(-20deg) scale(0);
+                }
+              }
+            }
