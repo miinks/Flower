@@ -395,3 +395,59 @@ body {
           }
         }
       
+
+        &__light {
+          position: absolute;
+          bottom: 0vmin;
+          width: 1vmin;
+          height: 1vmin;
+          background-color: rgb(255, 251, 0);
+          border-radius: 50%;
+          filter: blur(0.2vmin);
+          animation: light-ans 4s linear infinite backwards;
+      
+          &:nth-child(odd) {
+            background-color: #23f0ff;
+          }
+      
+          &--1 {
+            left: -2vmin;
+            animation-delay: 1s;
+          }
+      
+          &--2 {
+            left: 3vmin;
+            animation-delay: 0.5s;
+          }
+      
+          &--3 {
+            left: -6vmin;
+            animation-delay: 0.3s;
+          }
+      
+          &--4 {
+            left: 6vmin;
+            animation-delay: 0.9s;
+          }
+      
+          &--5 {
+            left: -1vmin;
+            animation-delay: 1.5s;
+          }
+      
+          &--6 {
+            left: -4vmin;
+            animation-delay: 3s;
+          }
+      
+          &--7 {
+            left: 3vmin;
+            animation-delay: 2s;
+          }
+      
+          &--8 {
+            left: -6vmin;
+            animation-delay: 3.5s;
+          }
+        }
+      
